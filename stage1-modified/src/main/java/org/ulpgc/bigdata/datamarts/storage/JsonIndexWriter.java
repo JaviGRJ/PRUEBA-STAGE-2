@@ -48,7 +48,7 @@ final class JsonIndexWriter {
                 writer.write("}\n");
             }
         } catch (IOException e) {
-            System.err.println("Error escribiendo índice JSON en " + outputFile + ": " + e.getMessage());
+            throw new IllegalStateException("Error escribiendo índice JSON en " + outputFile, e);
         }
     }
 

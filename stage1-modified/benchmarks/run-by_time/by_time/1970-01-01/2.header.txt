@@ -1,0 +1,4 @@
+Title: Adventure Two
+Author: Second Author
+Language: en
+Release Date: 1920

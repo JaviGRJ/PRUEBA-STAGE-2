@@ -105,7 +105,7 @@ public class PipelineController {
                     StandardOpenOption.APPEND
             );
         } catch (IOException e) {
-            System.err.println("Error escribiendo en fichero de control " + file + ": " + e.getMessage());
+            throw new IllegalStateException("Error escribiendo en fichero de control " + file, e);
         }
     }
 }

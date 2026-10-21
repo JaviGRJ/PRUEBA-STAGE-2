@@ -1,0 +1,1 @@
+Adventure, adventure! A common corpus document with useful tokens.

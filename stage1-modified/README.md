@@ -12,3 +12,9 @@ sub-picosecond work.
 `DataLakeLayouts.write(...)` creates Header/Body files under any of the three
 layouts and returns `sizeBytes`, `sizeKb`, and `timeMs`, so the report can
 compare the same input and operation across strategies.
+
+Use `benchmarks/run-benchmarks.ps1` for the common-corpus Java/Python/C# run.
+The raw outputs, coverage table, timing boundaries, environment assumptions,
+and pipeline diagram are in `benchmarks/README.md`, `benchmarks/COVERAGE.md`,
+and `PIPELINE.md`. Results must be reported separately by layout and index
+structure; generic language-only tables are intentionally not produced.
