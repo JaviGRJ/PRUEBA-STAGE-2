@@ -1,0 +1,12 @@
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\bin\Debug\net8.0\Stage1Modified.deps.json
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\bin\Debug\net8.0\Stage1Modified.dll
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\bin\Debug\net8.0\Stage1Modified.pdb
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\Stage1Modified.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\Stage1Modified.AssemblyInfoInputs.cache
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\Stage1Modified.AssemblyInfo.cs
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\Stage1Modified.csproj.CoreCompileInputs.cache
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\Stage1Modified.sourcelink.json
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\Stage1Modified.dll
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\refint\Stage1Modified.dll
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\Stage1Modified.pdb
+C:\Users\Javier Guerra\.copilot\copilot-worktrees\PRUEBA-STAGE-2\javigrj-expert-broccoli\stage1-modified\csharp\obj\Debug\net8.0\ref\Stage1Modified.dll
