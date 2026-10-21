@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  server:
+    build: ./java_server_jar
+    ports: 
+      - "8080:8080"
+    environment:
+      - "port=8080"
+  client:
+    build: ./java_client_jar
+    network_mode: "host"
+    volumes:
+      - ./java_client_jar:/opt/sample/data
