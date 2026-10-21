@@ -1,0 +1,4 @@
+book_id,header_file,body_file,expected_query
+1,1.header.txt,1.body.txt,adventure
+2,2.header.txt,2.body.txt,adventure
+3,3.header.txt,3.body.txt,science

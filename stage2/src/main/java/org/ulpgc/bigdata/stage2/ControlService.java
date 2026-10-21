@@ -16,8 +16,8 @@ public final class ControlService {
         app.post("/run/{bookId}", ctx -> {
             int id = Integer.parseInt(ctx.pathParam("bookId"));
             HttpClient client = HttpClient.newHttpClient();
-            call(client, ingestion + "/ingest/" + id, "POST");
-            call(client, indexing + "/index/update/" + id, "POST");
+            callWithRetry(client, ingestion + "/ingest/" + id, "POST");
+            callWithRetry(client, indexing + "/index/update/" + id, "POST");
             ctx.json(Map.of("book_id", id, "status", "indexed"));
         });
         app.exception(Exception.class, (e, ctx) -> ctx.status(502).json(Map.of("error", e.getMessage())));
@@ -26,5 +26,19 @@ public final class ControlService {
         HttpRequest request = HttpRequest.newBuilder(URI.create(url)).method(method, HttpRequest.BodyPublishers.noBody()).build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         if (response.statusCode() / 100 != 2) throw new IllegalStateException("workflow call failed: " + response.body());
+    }
+
+    private static void callWithRetry(HttpClient client, String url, String method) throws Exception {
+        Exception last = null;
+        for (int attempt = 1; attempt <= 3; attempt++) {
+            try {
+                call(client, url, method);
+                return;
+            } catch (Exception e) {
+                last = e;
+                if (attempt < 3) Thread.sleep(200L * attempt);
+            }
+        }
+        throw last;
     }
 }

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "tokens": {
+    "1": [
+      "a",
+      "adventure",
+      "common",
+      "corpus",
+      "document",
+      "tokens",
+      "useful",
+      "with"
+    ],
+    "2": [
+      "a",
+      "adventure",
+      "and",
+      "document",
+      "exploration",
+      "first",
+      "query",
+      "share",
+      "term",
+      "the",
+      "with"
+    ],
+    "3": [
+      "and",
+      "control",
+      "corpus",
+      "index",
+      "lookup",
+      "measurement",
+      "science",
+      "the",
+      "validate"
+    ]
+  }
+}

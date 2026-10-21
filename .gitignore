@@ -1,0 +1,16 @@
+**/target/
+**/bin/
+**/obj/
+**/__pycache__/
+*.pyc
+stage1-modified/benchmarks/java-run/
+stage1-modified/benchmarks/python-run-*/
+stage1-modified/benchmarks/csharp-run-*/
+stage1-modified/benchmarks/index-*/
+stage1-modified/benchmarks/target/
+stage1-modified/benchmarks/*.tmp
+stage1-modified/benchmarks/run-*/
+stage1-modified/benchmarks/*-index-*/
+stage1-modified/benchmarks/index-*.json
+stage1-modified/benchmarks/generated-*/
+stage1-modified/benchmarks/scale-results-*/

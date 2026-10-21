@@ -1,10 +1,10 @@
 package org.ulpgc.bigdata.datamarts;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.charset.StandardCharsets;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,7 +20,7 @@ public class MetadataParser {
         Pattern authorPattern = Pattern.compile("^Author:\\s+(.*)$", Pattern.CASE_INSENSITIVE);
         Pattern langPattern = Pattern.compile("^Language:\\s+(.*)$", Pattern.CASE_INSENSITIVE);
 
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+        try (BufferedReader br = Files.newBufferedReader(Path.of(filePath), StandardCharsets.UTF_8)) {
             String line;
             while ((line = br.readLine()) != null) {
                 Matcher titleMatcher = titlePattern.matcher(line);
