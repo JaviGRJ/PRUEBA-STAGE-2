@@ -27,6 +27,7 @@ available.
 ```powershell
 cd stage1-modified
 powershell -File benchmarks/run-benchmarks.ps1
+powershell -File benchmarks/scale-benchmarks.ps1
 ```
 
 The script records the current source revision with Git, rebuilds Java/C#/Python,
@@ -36,6 +37,11 @@ Timing uses `System.nanoTime`, `Stopwatch`, and `time.perf_counter`; reported
 values are milliseconds. The timed regions consume their outputs by checking
 file counts, serialized bytes, postings, and query answer counts.
 `RESULTS.md` numbers the presentation tables and is generated from the raw CSVs.
+
+`scale-benchmarks.ps1` generates deterministic 500- and 1000-book corpora and
+stores their separate raw results under `scale-results-500/` and
+`scale-results-1000/`. These directories are ignored as generated evidence; copy
+the CSVs into the report artifacts when submitting a scale experiment.
 
 The serialized metadata schema is `book_id,title,author,language,year`; the
 monolithic index is a deterministic JSON object `term -> sorted book IDs`, and
