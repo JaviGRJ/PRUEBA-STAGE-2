@@ -16,4 +16,8 @@ final class JsonFiles {
         try { Files.move(temp, path, StandardCopyOption.ATOMIC_MOVE, StandardCopyOption.REPLACE_EXISTING); }
         catch (AtomicMoveNotSupportedException e) { Files.move(temp, path, StandardCopyOption.REPLACE_EXISTING); }
     }
+
+    static void writePublishedSnapshot(Path path, PublishedSnapshot snapshot) throws IOException {
+        writeAtomically(path, snapshot);
+    }
 }
