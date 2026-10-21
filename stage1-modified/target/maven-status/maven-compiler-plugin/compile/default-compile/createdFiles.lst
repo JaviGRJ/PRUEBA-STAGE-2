@@ -1,0 +1,15 @@
+org\ulpgc\bigdata\datamarts\InvertedIndex$MemoryFootprint.class
+org\ulpgc\bigdata\control\PipelineController.class
+org\ulpgc\bigdata\datamarts\storage\JsonFileIndexStorage.class
+org\ulpgc\bigdata\datamarts\storage\MongoIndexStorage.class
+org\ulpgc\bigdata\datamarts\InvertedIndex.class
+org\ulpgc\bigdata\datamarts\MetadataStore.class
+org\ulpgc\bigdata\datamarts\storage\DataLakeMetrics$Measurement.class
+org\ulpgc\bigdata\control\IndexingPipeline.class
+org\ulpgc\bigdata\datamarts\MetadataParser.class
+org\ulpgc\bigdata\datamarts\storage\DataLakeMetrics.class
+org\ulpgc\bigdata\datamarts\storage\IndexStorage.class
+org\ulpgc\bigdata\datamarts\Tokenizer.class
+org\ulpgc\bigdata\datamarts\BookMetadata.class
+org\ulpgc\bigdata\datamarts\storage\JsonIndexWriter.class
+org\ulpgc\bigdata\datamarts\storage\FolderHierarchyIndexStorage.class
